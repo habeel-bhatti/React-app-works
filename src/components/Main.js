@@ -1,10 +1,11 @@
 import React from 'react'
+import './Main.css';
 
-const Main = () => {
+const Main = (props) => {
   return (
-    <div>
-        <span> this is my card<span/>
-
+    <div className='box'>
+    <h1>{props.title}</h1>
+    <p>{props.description}</p>  
     </div>
   )
 }
